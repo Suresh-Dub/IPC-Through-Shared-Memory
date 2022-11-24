@@ -26,7 +26,8 @@ To allow cooperating processes to access the same pieces of data concurrently an
 ##
 
 ## Team Members
-<br> <a href="https://github.com/suresh-dub">Suresh Dub</a> </br>
 <br> <a href="https://github.com/Akshay932004">Akshay Pawar</a> </br>
 <br> <a href="https://github.com/manujkhajuria">Manuj Khajuria</a> </br>
+<br> <a href="https://github.com/suresh-dub">Suresh Dub</a> </br>
+
 
