@@ -1,4 +1,4 @@
-<h1 align="center">IPC USING SHARED MEMORY</h1>
+<h1 align="center">IPC THROUGH SHARED MEMORY</h1>
 Inter-process communication is the way by which multiple processes can communicate with each other. Shared memory in OS, message queues, FIFO, etc. are some of the ways to achieve IPC in os. A system can have two types of processes i.e. independent or cooperating. Cooperating processes affect each other and may share data and information among themselves.
 
 
@@ -8,6 +8,24 @@ Inter-process communication is the way by which multiple processes can communica
 ![App Screenshot](https://github.com/Suresh-Dub/OPERATING-SYSTEM-PROJECT/blob/main/Images/Shared%20Memory.png)
 
 
+## Why Choose IPC through Shared Memory?
+
+   ```bash
+Usually, inter-related process communication is performed using Pipes or Named Pipes. And unrelated processes communication
+can be performed using Named Pipes or through popular IPC techniques of Shared Memory and Message Queues.
+
+But the problem with pipes, FIFO, and message queue is that the information exchange between two processes goes through the 
+kernel, and it works as follows.
+
+> The server reads from the input file.
+> The server writes this data in a message using pipe, FIFO, or message queue.
+> The client reads the data from the IPC channel, again requiring the data to be copied from the kernel's IPC buffer 
+  to the client's buffer.
+> Finally, the data is copied from the client's buffer.
+> A total of four copies of data are required (2 read and 2 write). So, shared memory provides a way by letting two 
+  or more processes share a memory segment. With Shared Memory, the data is only copied twice, from the input file 
+  into shared memory and from shared memory to the output file.
+   ```
 
 
 ## Goal
@@ -70,7 +88,16 @@ printf("Data read from shared memory is : %s\n",(char *)shared_memory);
    ```
 
 
+
+
+
 ##
+
+
+## References 
+<br> <a href="https://www.geeksforgeeks.org/inter-process-communication-ipc/">Geeks for Geeks</a> </br>
+<br> <a href="https://www.tutorialspoint.com/what-is-interprocess-communication">Tutorial's Point</a> </br>
+
 
 ## Team Members
 <br> <a href="https://github.com/Akshay932004">Akshay Pawar</a> </br>
