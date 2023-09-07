@@ -230,9 +230,5 @@ printf("Data read from shared memory is : %s\n",(char *)shared_memory);
 <br> <a href="https://www.tutorialspoint.com/what-is-interprocess-communication">Tutorial's Point</a> </br>
 
 
-## Team Members
-<br> <a href="https://github.com/Akshay932004">Akshay Pawar</a> </br>
-<br> <a href="https://github.com/manujkhajuria">Manuj Khajuria</a> </br>
-<br> <a href="https://github.com/suresh-dub">Suresh Dub</a> </br>
 
 
